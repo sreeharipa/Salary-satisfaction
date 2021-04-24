@@ -52,7 +52,7 @@ UndergradMajor                True ___ replaced null with 'no major' which is mo
 CompanySize                  False ___ converted into numerical, by replacing with mean of the range
 DevType                       True ___ converted into **_devt variables
 YearsCoding                   True ___ converted into numerical with mean, replaced null with 0
-YearsCodingProf               True ___ converted into numerical with mean, replaced null with 0
+YearsCodingProf               True can be removed, corelated with yearscoding
 HopeFiveYears                 True ___ replaced null with 'hopeless'
 JobSearchStatus               True ___ replaced null with 'not looking for a job rn'
 LastNewJob                    True ___ replaced null with 'never had a job' and converted into numerical by using mean of range
