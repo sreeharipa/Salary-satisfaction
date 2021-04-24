@@ -30,61 +30,61 @@ ignorable variables:
 pymnt_plan (because all same), url (cause it has id in it and nothing more),  
 
 Variables having null values or not:
-id                           False ....
+id                           False can be ignored
 Target A                     False __
 Target B                     False __
 LOAN_AMT                     False __
-Business Title               False __
-Civil Service Title          False __
+Business Title               False ___ => bustitle
+Civil Service Title          False ___ => cstitle
 Division/Work Unit           False __
 Job Description              False .....
 Minimum Qual Requirements     True ..... 
-Preferred Skills              True => skills y/n
-Additional Information        True ....
-To Apply                      True ....
+Preferred Skills              True ___ => skills y/n
+Additional Information        True ___ => addinfo y/n
+To Apply                      True isnt useful afaik
 Hours/Shift                   True can be removed cause its all 35 hrs effectively (or) => hrs 
-Residency Requirement         True 
+Residency Requirement         True ___ => RR y/n
 Posting Date                  True __
 Posting Updated               True can be removed since its almost same as posting date
 Process Date                  True can be removed cause its all same
 FormalEducation               True ___ replaced null with 'not completed any education' 
 UndergradMajor                True ___ replaced null with 'no major' which is mostly the reason why nothing was mentioned
 CompanySize                  False ___ converted into numerical, by replacing with mean of the range
-DevType                       True 
+DevType                       True ___ converted into **_devt variables
 YearsCoding                   True ___ converted into numerical with mean, replaced null with 0
 YearsCodingProf               True ___ converted into numerical with mean, replaced null with 0
 HopeFiveYears                 True ___ replaced null with 'hopeless'
 JobSearchStatus               True ___ replaced null with 'not looking for a job rn'
 LastNewJob                    True ___ replaced null with 'never had a job' and converted into numerical by using mean of range
-UpdateCV                      True 
-CommunicationTools            True
+UpdateCV                      True ____ null replaced
+CommunicationTools            True ___ => comm_**
 TimeFullyProductive           True ___ converted into numerical value
-EducationTypes                True 
-SelfTaughtTypes               True
+EducationTypes                True ___ => et_***
+SelfTaughtTypes               True ___ => stt_***
 TimeAfterBootcamp             True can be removed since most of the data is null (2.7k out of 2.8k)
 HackathonReasons              True can be removed since most of the data is null (2k out of 2.8k)
 AgreeDisagree1                True ___ replaced null with neither agree nor disagree, converted into numerical as well
 AgreeDisagree2                True ___ replaced null with neither agree nor disagree, converted into numerical as well
 AgreeDisagree3                True ___ replaced null with neither agree nor disagree, converted into numerical as well
-LanguageWorkedWith            True
-LanguageDesireNextYear        True
-DatabaseWorkedWith            True
-DatabaseDesireNextYear        True
-PlatformWorkedWith            True
-PlatformDesireNextYear        True
-FrameworkWorkedWith           True
-FrameworkDesireNextYear       True
-IDE                           True
+LanguageWorkedWith            True ___ => lww_**
+LanguageDesireNextYear        True Desires can be removed since it is a future objective
+DatabaseWorkedWith            True ___ => dww_***
+DatabaseDesireNextYear        True Desires can be removed since it is a future objective
+PlatformWorkedWith            True ____ => pww_**
+PlatformDesireNextYear        True Desires can be removed since it is a future objective
+FrameworkWorkedWith           True ___ => fww_**
+FrameworkDesireNextYear       True Desires can be removed since it is a future objective
+IDE                           True ___ => IDE_**
 OperatingSystem               True __ replaced null with "none of the given"
-Methodology                   True 
-VersionControl                True
+Methodology                   True ___ => meth_***
+VersionControl                True __ vc_**
 CheckInCode                   True __ replaced nulls with never and converted into numerical values 
-AIDangerous                   True RC
-AIInteresting                 True RC
-AIResponsible                 True RC
-AIFuture                      True RC
+AIDangerous                   True doesnt look related
+AIInteresting                 True doesnt look related
+AIResponsible                 True doesnt look related
+AIFuture                      True doesnt look related
 Age                           True ___ null values replaced by using yearscoding variable and made into numerical 
-term                         False 
+term                         False ___ usable data
 emp_length                    True __ converted into numerical values
 loan_status                  False ___ nothing much to do as of first look
 pymnt_plan                   False can be removed since its same for all the data 
@@ -92,7 +92,7 @@ url                          False same as the id hence can be removed
 purpose                      False __ useful, no cleaning required from first glance
 title                         True almost same as purpose hence can be removed
 zip_code                     False ___converted into numerical by removing xx 
-addr_state                   False could be ignored since zip code covers state indirectly at first glance
+addr_state                   False could be ignored since zip code covers state indirectly
 dti                          False ___ useful numerical value 
 earliest_cr_line             False __ month parsed to 'ecl'
 last_pymnt_d                 False ___ month parsed
@@ -101,7 +101,5 @@ next_pymnt_d                  True this is directly corelated to loan status hen
 last_credit_pull_d           False ___got the month from this. Date is almost similar for all rows hence can be ignored
 
 
-IMPORTANT:
-title and purpose are almost same .... check it out
 
 
