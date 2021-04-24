@@ -56,7 +56,7 @@ YearsCodingProf               True ___ converted into numerical with mean, repla
 HopeFiveYears                 True ___ replaced null with 'hopeless'
 JobSearchStatus               True ___ replaced null with 'not looking for a job rn'
 LastNewJob                    True ___ replaced null with 'never had a job' and converted into numerical by using mean of range
-UpdateCV                      True 
+UpdateCV                      True ____ null replaced
 CommunicationTools            True ___ => comm_**
 TimeFullyProductive           True ___ converted into numerical value
 EducationTypes                True ___ => et_***
@@ -66,23 +66,23 @@ HackathonReasons              True can be removed since most of the data is null
 AgreeDisagree1                True ___ replaced null with neither agree nor disagree, converted into numerical as well
 AgreeDisagree2                True ___ replaced null with neither agree nor disagree, converted into numerical as well
 AgreeDisagree3                True ___ replaced null with neither agree nor disagree, converted into numerical as well
-LanguageWorkedWith            True ___ =>lww_**
+LanguageWorkedWith            True ___ => lww_**
 LanguageDesireNextYear        True Desires can be removed since it is a future objective
-DatabaseWorkedWith            True
+DatabaseWorkedWith            True ___ => dww_***
 DatabaseDesireNextYear        True Desires can be removed since it is a future objective
-PlatformWorkedWith            True
+PlatformWorkedWith            True ____ => pww_**
 PlatformDesireNextYear        True Desires can be removed since it is a future objective
-FrameworkWorkedWith           True
+FrameworkWorkedWith           True ___ => fww_**
 FrameworkDesireNextYear       True Desires can be removed since it is a future objective
-IDE                           True
+IDE                           True ___ => IDE_**
 OperatingSystem               True __ replaced null with "none of the given"
-Methodology                   True 
-VersionControl                True
+Methodology                   True ___ => meth_***
+VersionControl                True __ vc_**
 CheckInCode                   True __ replaced nulls with never and converted into numerical values 
-AIDangerous                   True RC
-AIInteresting                 True RC
-AIResponsible                 True RC
-AIFuture                      True RC
+AIDangerous                   True doesnt look related
+AIInteresting                 True doesnt look related
+AIResponsible                 True doesnt look related
+AIFuture                      True doesnt look related
 Age                           True ___ null values replaced by using yearscoding variable and made into numerical 
 term                         False ___ usable data
 emp_length                    True __ converted into numerical values
