@@ -23,11 +23,8 @@ variables to look at:
        'dti', 'earliest_cr_line', 'last_pymnt_d', 'last_pymnt_amnt',
        'next_pymnt_d', 'last_credit_pull_d']
 
-Important variables:
-LOAN_AMT, Business Title, 
 
-ignorable variables:
-pymnt_plan (because all same), url (cause it has id in it and nothing more),  
+
 
 Variables having null values or not:
 id                           False can be ignored
