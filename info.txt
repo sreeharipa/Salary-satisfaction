@@ -29,7 +29,7 @@ ____ : the variable is used in the analysis
 => : data converted into different variable
 .... : Dunno how to use the data
 
-Variables having null values or not:
+Variables        ||    null values ||   Action 
 id                           False can be ignored
 Target A                     False __
 Target B                     False __
