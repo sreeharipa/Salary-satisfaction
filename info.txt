@@ -24,7 +24,10 @@ variables to look at:
        'next_pymnt_d', 'last_credit_pull_d']
 
 
-
+index
+____ : the variable is used in the analysis
+=> : data converted into different variable
+.... : Dunno how to use the data
 
 Variables having null values or not:
 id                           False can be ignored
